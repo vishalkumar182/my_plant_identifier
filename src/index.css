@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #16a34a;
+  --primary-dark: #15803d;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 
+           transition-colors duration-200 focus:outline-none focus:ring-2 
+           focus:ring-green-500 focus:ring-offset-2;
+  }
+  
+  .input-field {
+    @apply border border-gray-300 rounded-lg px-4 py-2 focus:outline-none 
+           focus:ring-2 focus:ring-green-500 focus:border-transparent;
+  }
+}
